@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		00F64449199DDA7F00DE658D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F64448199DDA7F00DE658D /* Foundation.framework */; };
 		00F64457199DDB5100DE658D /* mainCarParts.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F64456199DDB5100DE658D /* mainCarParts.m */; };
+		00F6445A199E070A00DE658D /* Engine.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F64459199E070A00DE658D /* Engine.m */; };
+		00F6445D199E07A200DE658D /* Tire.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6445C199E07A200DE658D /* Tire.m */; };
+		00F64462199E09A100DE658D /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F64461199E09A100DE658D /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +29,14 @@
 /* Begin PBXFileReference section */
 		00F64445199DDA7F00DE658D /* CarParts */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = CarParts; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F64448199DDA7F00DE658D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		00F6444E199DDA7F00DE658D /* CarParts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarParts-Prefix.pch"; sourceTree = "<group>"; };
 		00F64456199DDB5100DE658D /* mainCarParts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainCarParts.m; sourceTree = "<group>"; };
+		00F64458199E070A00DE658D /* Engine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Engine.h; sourceTree = "<group>"; };
+		00F64459199E070A00DE658D /* Engine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Engine.m; sourceTree = "<group>"; };
+		00F6445B199E07A200DE658D /* Tire.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tire.h; sourceTree = "<group>"; };
+		00F6445C199E07A200DE658D /* Tire.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tire.m; sourceTree = "<group>"; };
+		00F6445F199E095700DE658D /* CarParts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CarParts-Prefix.pch"; path = "CarParts/CarParts-Prefix.pch"; sourceTree = "<group>"; };
+		00F64460199E09A100DE658D /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		00F64461199E09A100DE658D /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,7 @@
 		00F64447199DDA7F00DE658D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				00F6445F199E095700DE658D /* CarParts-Prefix.pch */,
 				00F64448199DDA7F00DE658D /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -71,17 +81,14 @@
 			isa = PBXGroup;
 			children = (
 				00F64456199DDB5100DE658D /* mainCarParts.m */,
-				00F6444D199DDA7F00DE658D /* Supporting Files */,
+				00F6445B199E07A200DE658D /* Tire.h */,
+				00F6445C199E07A200DE658D /* Tire.m */,
+				00F64458199E070A00DE658D /* Engine.h */,
+				00F64459199E070A00DE658D /* Engine.m */,
+				00F64460199E09A100DE658D /* Car.h */,
+				00F64461199E09A100DE658D /* Car.m */,
 			);
 			path = CarParts;
-			sourceTree = "<group>";
-		};
-		00F6444D199DDA7F00DE658D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00F6444E199DDA7F00DE658D /* CarParts-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				00F64457199DDB5100DE658D /* mainCarParts.m in Sources */,
+				00F6445D199E07A200DE658D /* Tire.m in Sources */,
+				00F64462199E09A100DE658D /* Car.m in Sources */,
+				00F6445A199E070A00DE658D /* Engine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
