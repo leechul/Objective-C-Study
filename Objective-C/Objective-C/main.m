@@ -14,9 +14,12 @@ int main(int argc, const char * argv[])
     @autoreleasepool {
         
         // insert code here...
-        NSLog(@"Hello, World!");
+        NSLog(@"The number from 1 to 5:");
+        for (int i = 0; i <=5; i++) {
+            NSLog(@"%d",i);
+        }
         
     }
     return 0;
-}
+}//end main
 
