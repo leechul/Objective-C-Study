@@ -25,6 +25,8 @@
 {
     return (@"I am an Engine. Vrooom!");
 }
+
+
 @end
 
 
@@ -63,6 +65,11 @@
     NSLog(@"%@", tires[2]);
     NSLog(@"%@", tires[3]);
 }
+
+- (void) test
+{
+    NSLog(@"this is test");
+}
 @end
 
 int main ( int argc, const char * argv[])
@@ -71,6 +78,8 @@ int main ( int argc, const char * argv[])
     
     car = [Car new];
     [car print];
+    [car test];
+    
     
     return (0);
 }
