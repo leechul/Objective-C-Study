@@ -17,15 +17,29 @@
 
 //Engine
 @interface Engine : NSObject
+
 @end
 
 @implementation Engine
+
 
 - (NSString *) description
 {
     return (@"I am an Engine. Vrooom!");
 }
 
+
+@end
+
+@interface EngineLee : Engine
+
+@end
+@implementation EngineLee
+
+- (NSString *) description
+{
+    return (@"I am an EngineLee. Amazing");
+}
 
 @end
 
@@ -39,21 +53,19 @@
 }
 
 - (void)    print;
-
+- (void)    setEngine: (id) engine;
+- (void)    setTire: (id) tire atIndex: (int) idx;
+- (Engine *) engine;
 @end
 
 @implementation Car
-
-- (id)  init
+- (Engine *) engine
 {
-    if (self = [super init]){
-        engine = [Engine new];
-        tires[0] = [Tire new];
-        tires[1] = [Tire new];
-        tires[2] = [Tire new];
-        tires[3] = [Tire new];
-    }
-    return (self);
+    return (engine);
+}
+- (void)    setTire:(id)tire atIndex:(int)idx
+{
+    tires[idx] = tire;
 }
 
 - (void) print
@@ -65,11 +77,11 @@
     NSLog(@"%@", tires[2]);
     NSLog(@"%@", tires[3]);
 }
-
-- (void) test
+- (void)setEngine: (id)a;
 {
-    NSLog(@"this is test");
+    engine = a;
 }
+
 @end
 
 int main ( int argc, const char * argv[])
@@ -77,9 +89,19 @@ int main ( int argc, const char * argv[])
     Car *car;
     
     car = [Car new];
+   
+    Engine *engine = [Engine new];
+    [car setEngine:engine];
+    for ( int i=0; i <4; i++)
+    {
+    [car setTire:[Tire new] atIndex:i];
+    }
     [car print];
-    [car test];
     
-    
+    Car *newcar;
+    newcar = [Car new];
+    Engine *newengine = [EngineLee new];
+    [newcar setEngine:newengine];
+    [newcar print];
     return (0);
 }
