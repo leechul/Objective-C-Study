@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00F64449199DDA7F00DE658D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F64448199DDA7F00DE658D /* Foundation.framework */; };
-		00F6444C199DDA7F00DE658D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6444B199DDA7F00DE658D /* main.m */; };
-		00F64450199DDA7F00DE658D /* CarParts.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 00F6444F199DDA7F00DE658D /* CarParts.1 */; };
+		00F64457199DDB5100DE658D /* mainCarParts.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F64456199DDB5100DE658D /* mainCarParts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -19,18 +18,16 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				00F64450199DDA7F00DE658D /* CarParts.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		00F64445199DDA7F00DE658D /* CarParts */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CarParts; sourceTree = BUILT_PRODUCTS_DIR; };
+		00F64445199DDA7F00DE658D /* CarParts */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.executable"; path = CarParts; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F64448199DDA7F00DE658D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		00F6444B199DDA7F00DE658D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00F6444E199DDA7F00DE658D /* CarParts-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CarParts-Prefix.pch"; sourceTree = "<group>"; };
-		00F6444F199DDA7F00DE658D /* CarParts.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CarParts.1; sourceTree = "<group>"; };
+		00F64456199DDB5100DE658D /* mainCarParts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainCarParts.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +70,7 @@
 		00F6444A199DDA7F00DE658D /* CarParts */ = {
 			isa = PBXGroup;
 			children = (
-				00F6444B199DDA7F00DE658D /* main.m */,
-				00F6444F199DDA7F00DE658D /* CarParts.1 */,
+				00F64456199DDB5100DE658D /* mainCarParts.m */,
 				00F6444D199DDA7F00DE658D /* Supporting Files */,
 			);
 			path = CarParts;
@@ -139,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F6444C199DDA7F00DE658D /* main.m in Sources */,
+				00F64457199DDB5100DE658D /* mainCarParts.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
