@@ -7,14 +7,26 @@
 //
 
 #import "CaculatorViewController.h"
+#import "CaculatorBrain.h"
 
 @interface CaculatorViewController ()
 @property (nonatomic) BOOL userIsInTheMiddleOfEnteringANumber;
+@property (nonatomic, strong) CaculatorBrain *barin;
 @end
 
 @implementation CaculatorViewController
 @synthesize display=_display;
 @synthesize userIsInTheMiddleOfEnteringANumber=_userIsInTheMiddleOfEnteringANumber;
+@synthesize barin = _barin;
+
+- (CaculatorBrain *) brain
+{
+    if (!_barin)
+    { _barin = [[CaculatorBrain alloc] init];
+    }
+    return  _barin;
+}
+
 - (IBAction)digitPressed:(UIButton *)sender {
     NSString* digit = [sender currentTitle];
     if (self.userIsInTheMiddleOfEnteringANumber) {
@@ -37,8 +49,14 @@
     //self.display.text = [self.display.text stringByAppendingString:digit];
 }
 - (IBAction)enterPressed {
+    [self.barin pushOperand:[self.display.text doubleValue]];
+    self.userIsInTheMiddleOfEnteringANumber = NO;
 }
-- (IBAction)operationPressed:(id)sender {
+- (IBAction)operationPressed:(UIButton *)sender {
+    if (self.userIsInTheMiddleOfEnteringANumber) [self enterPressed];
+    double result = [self.barin performOperation:sender.currentTitle ];
+    NSString *resultString = [NSString stringWithFormat:@"%g", result];
+    self.display.text = resultString;
 }
 
 

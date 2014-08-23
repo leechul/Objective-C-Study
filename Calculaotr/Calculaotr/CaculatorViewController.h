@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "CaculatorBrain.h"
 @interface CaculatorViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *display;
 

@@ -21,6 +21,7 @@
 		0088E37419A86FED00486589 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0088E35619A86FED00486589 /* UIKit.framework */; };
 		0088E37C19A86FED00486589 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0088E37A19A86FED00486589 /* InfoPlist.strings */; };
 		0088E37E19A86FED00486589 /* CalculaotrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0088E37D19A86FED00486589 /* CalculaotrTests.m */; };
+		0088E38919A8897300486589 /* CaculatorBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 0088E38819A8897300486589 /* CaculatorBrain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0088E37919A86FED00486589 /* CalculaotrTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculaotrTests-Info.plist"; sourceTree = "<group>"; };
 		0088E37B19A86FED00486589 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0088E37D19A86FED00486589 /* CalculaotrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculaotrTests.m; sourceTree = "<group>"; };
+		0088E38719A8897300486589 /* CaculatorBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaculatorBrain.h; sourceTree = "<group>"; };
+		0088E38819A8897300486589 /* CaculatorBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaculatorBrain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				0088E36819A86FED00486589 /* CaculatorViewController.m */,
 				0088E36A19A86FED00486589 /* Images.xcassets */,
 				0088E35919A86FED00486589 /* Supporting Files */,
+				0088E38719A8897300486589 /* CaculatorBrain.h */,
+				0088E38819A8897300486589 /* CaculatorBrain.m */,
 			);
 			path = Calculaotr;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0088E35F19A86FED00486589 /* main.m in Sources */,
+				0088E38919A8897300486589 /* CaculatorBrain.m in Sources */,
 				0088E36919A86FED00486589 /* CaculatorViewController.m in Sources */,
 				0088E36319A86FED00486589 /* CaculatorAppDelegate.m in Sources */,
 			);
